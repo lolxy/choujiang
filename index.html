@@ -1,0 +1,415 @@
+<!--
+	作者：604749526@qq.com
+	时间：2017-07-22
+	描述：抽奖首页
+-->
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+   <meta name = "format-detection" content = "telephone=no">
+   <meta name="apple-mobile-web-app-capable" content="no">
+   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+   <title></title>
+    <link href="css/base.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="tab1">
+<header>
+	<img src="images/indextitle.png" class="img-responsive"/>
+</header>
+<div class="counts">
+	您还有<em>3</em>次抽奖机会
+</div>
+<div id="lottery">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr class="lottery-group">
+			<td class="lottery-unit td_1 active" >
+                <div class="lottery-box">
+                	<img src="images/1.png" class="img-responsive"/><p>谢谢参与</p>
+                </div>
+            </td>
+			<td class="lottery-unit td_2">
+            	<div class="lottery-box">
+                	<img src="images/2.png" class="img-responsive"/><p>红玫瑰</p>
+                </div>
+            </td>
+			<td class="lottery-unit td_3">
+            	<div class="lottery-box">
+                	<img src="images/2.png" class="img-responsive"/><p>绿萝</p>
+                </div>
+            </td>
+		</tr>
+		<tr class="lottery-group">
+			<td class="lottery-unit td_4">
+            	<div class="lottery-box">
+                	<img src="images/2.png" class="img-responsive"/><p>情人草</p>
+                </div>
+            </td>
+			<td class="td_5"><a href="#"><img src="images/start.png" class="img-responsive"/></a></td>
+			<td class="lottery-unit td_6">
+            	<div class="lottery-box">
+                	<img src="images/2.png" class="img-responsive"/><p>香槟玫瑰</p>
+                </div>
+            </td>
+		</tr>
+        <tr class="lottery-group">
+			<td class="lottery-unit td_7">
+            	<div class="lottery-box">
+                	<img src="images/2.png" class="img-responsive"/><p>百合一扎</p>
+                </div>
+            </td>
+			<td class="lottery-unit td_8">
+            	<div class="lottery-box">
+                	<img src="images/2.png" class="img-responsive"/><p>红掌</p>
+                </div>
+            </td>
+			<td class="lottery-unit td_9">
+            	<div class="lottery-box">
+                	<img src="images/1.png" class="img-responsive"/><p>谢谢参与</p>
+                </div>
+            </td>
+		</tr>
+	</table>
+</div>
+<div class="yaoqingbtn">
+	<a href="javascript:void(0);" class="shapebtn">
+    	<img src="images/yaoqingbtn.png" class="img-responsive"/>
+    </a>
+</div>
+
+<!--中奖弹窗-->
+<div class="tcbox hidden" id="zhongjiang">
+	<div class="maskbox"></div>
+    <div class="tccbox zhongjiangbox">
+    	<div class="tbox">
+        	<p>恭喜您获得</p>
+            <h2>百合一扎</h2>
+        </div>
+    </div>
+</div>
+<!--//中奖弹窗-->
+
+<!--没中奖弹窗-->
+<div class="tcbox hidden" id="nozhongjiang">
+	<div class="maskbox"></div>
+    <div class="tccbox nozhongjiangbox">
+    	<div class="tbox">
+        	<p>很遗憾</p>
+            <h2>什么都没有抽中</h2>
+        </div>
+    </div>
+</div>
+<!--//没中奖弹窗-->
+
+<!--提示未关注弹窗-->
+<div class="tcbox hidden" id="tippbox">
+	<div class="maskbox"></div>
+	<div class="tippbox">
+    	您还没有关注公众号
+    </div>
+</div>
+<!--//提示弹窗-->
+
+<!--提示未注册弹窗-->
+<div class="tcbox hidden" id="tippbox">
+	<div class="maskbox"></div>
+	<div class="tippbox">
+    	您还没有注册成会员哦！
+    </div>
+</div>
+<!--//提示弹窗-->
+
+<!--分享提示-->
+<div class="tcbox hidden" id="shape">
+	<div class="maskbox"></div>
+	<div class="shape">
+    	<img src="images/shape.png" class="img-responsive"/>
+    </div>
+</div>
+</section>
+
+<section class="tab2 hidden">
+<div class="huodongwrapper">
+	<div class="content">
+    	<h1>活动介绍</h1>
+        <div class="dlbox">
+        	<dl>
+            	<dt>活动时间：</dt>
+                <dd>2月1日 - 2月10日</dd>
+            </dl>
+            <dl>
+            	<dt>活动对象：</dt>
+                <dd>所有会员</dd>
+            </dl>
+            <dl class="all-line">
+            	<dt>活动奖品：</dt>
+                <dd>
+                	<span>代金券</span>
+                    <span>黄色百合</span>
+                    <span>玫瑰一扎</span>
+                </dd>
+            </dl>
+            <dl class="all-line">
+            	<dt>活动内容：</dt>
+                <dd>
+                	<p>活动期间，所有雨非轩会员每日均有机会在上午9:00—10:00、中午12：30—13:30以及傍晚17:00—18:00参与“0元抽奖，赢取鲜花花束的机会。</p>
+<p>礼品派发时间：获得鲜花礼品的用户，我们将于用户中奖纪录时间的下一周予以联系并派发。抽中抵用券的用户，在中奖纪录处可直接查看。</p>
+                </dd>
+            </dl>
+            <div class="des">
+            	本活动最终解释权归雨非轩所有。
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="tab3 hidden">
+<div class="huodongwrapper">
+	<div class="content">
+    	<h1>中奖会员</h1>
+        <div class="list">
+        	<table cellpadding="0" cellspacing="0" border="0" class="table">
+            	<thead>
+                	<tr>
+                        <th class="name">名称</th>
+                        <th class="count">奖品</th>
+                        <th class="status">数量</th>
+                    </tr>
+                </thead>
+             </table>
+             <div class="tablelist">
+             <table cellpadding="0" cellspacing="0" border="0" class="table">
+                <tbody>
+                    <tr>
+                        <td>
+                        	<div class="userbox">
+                                <div class="pic">
+                                    <img src="images/photo.png" alt="" class="img-responsive"/>
+                                </div>
+                                <span>冬冬</span>
+                            </div>
+                        </td>
+                        <td class="num">百合一扎</td>
+                        <td class="num">1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        	<div class="userbox">
+                                <div class="pic">
+                                    <img src="images/photo.png" alt="" class="img-responsive"/>
+                                </div>
+                                <span>冬冬</span>
+                            </div>
+                        </td>
+                        <td class="num">百合一扎</td>
+                        <td class="num">1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        	<div class="userbox">
+                                <div class="pic">
+                                    <img src="images/photo.png" alt="" class="img-responsive"/>
+                                </div>
+                                <span>冬冬</span>
+                            </div>
+                        </td>
+                        <td class="num">百合一扎</td>
+                        <td class="num">1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        	<div class="userbox">
+                                <div class="pic">
+                                    <img src="images/photo.png" alt="" class="img-responsive"/>
+                                </div>
+                                <span>冬冬</span>
+                            </div>
+                        </td>
+                        <td class="num">百合一扎</td>
+                        <td class="num">1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        	<div class="userbox">
+                                <div class="pic">
+                                    <img src="images/photo.png" alt="" class="img-responsive"/>
+                                </div>
+                                <span>冬冬</span>
+                            </div>
+                        </td>
+                        <td class="num">百合一扎</td>
+                        <td class="num">1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        	<div class="userbox">
+                                <div class="pic">
+                                    <img src="images/photo.png" alt="" class="img-responsive"/>
+                                </div>
+                                <span>冬冬</span>
+                            </div>
+                        </td>
+                        <td class="num">百合一扎</td>
+                        <td class="num">1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        	<div class="userbox">
+                                <div class="pic">
+                                    <img src="images/photo.png" alt="" class="img-responsive"/>
+                                </div>
+                                <span>冬冬</span>
+                            </div>
+                        </td>
+                        <td class="num">百合一扎</td>
+                        <td class="num">1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        	<div class="userbox">
+                                <div class="pic">
+                                    <img src="images/photo.png" alt="" class="img-responsive"/>
+                                </div>
+                                <span>冬冬</span>
+                            </div>
+                        </td>
+                        <td class="num">百合一扎</td>
+                        <td class="num">1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        	<div class="userbox">
+                                <div class="pic">
+                                    <img src="images/photo.png" alt="" class="img-responsive"/>
+                                </div>
+                                <span>冬冬</span>
+                            </div>
+                        </td>
+                        <td class="num">百合一扎</td>
+                        <td class="num">1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        	<div class="userbox">
+                                <div class="pic">
+                                    <img src="images/photo.png" alt="" class="img-responsive"/>
+                                </div>
+                                <span>冬冬</span>
+                            </div>
+                        </td>
+                        <td class="num">百合一扎</td>
+                        <td class="num">1</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+        <div class="number">
+        	活动参与总人数：<em>123</em>人
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="tab4 hidden">
+<div class="huodongwrapper">
+	<div class="content">
+    	<h1>我的奖品</h1>
+        <div class="list">
+        	<table cellpadding="0" cellspacing="0" border="0" class="table">
+            	<thead>
+                	<tr>
+                        <th class="name">名称</th>
+                        <th class="count">数量</th>
+                        <th class="status">状态</th>
+                    </tr>
+                </thead>
+             </table>
+             <div class="tablelist">
+             <table cellpadding="0" cellspacing="0" border="0" class="table">
+                <tbody>
+                    <tr>
+                        <td>百合一扎</td>
+                        <td class="num">1</td>
+                        <td class="disabled">已领取</td>
+                    </tr>
+                    <tr>
+                        <td>红玫瑰</td>
+                        <td class="num">1</td>
+                        <td class="disabled">已领取</td>
+                    </tr>
+                    <tr>
+                        <td>绿萝</td>
+                        <td class="num">3</td>
+                        <td class="active">待领取</td>
+                    </tr>
+                    <tr>
+                        <td>情人草</td>
+                        <td class="num">1</td>
+                        <td class="active">待领取</td>
+                    </tr>
+                </tbody>
+            </table>
+           </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<div class="fixbottom">
+    <div class="libox active">
+        <div class="box">
+            <img src="images/icon1.png" class="img-responsive"/>
+        </div>
+    </div>
+    <div class="libox">
+        <div class="box">
+            <img src="images/icon2.png" class="img-responsive"/>
+        </div>
+    </div>
+    <div class="libox">
+        <div class="box">
+            <img src="images/icon3.png" class="img-responsive"/>
+        </div>
+    </div>
+    <div class="libox">
+        <div class="box">
+            <img src="images/icon4.png" class="img-responsive"/>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/lottery.js"></script>
+<script type="text/javascript">
+window.onload = function () {
+	lottery.lottery({
+		selector:     '#lottery',
+		width:        3,
+		height:       3,
+		index:        0,    // 初始位置
+		initSpeed:    200,  // 初始转动速度
+		upStep:       50,   // 加速滚动步长
+		upMax:        50,   // 速度上限
+	});
+}
+
+$(".tcbox").click(function(){
+	$(this).hide();	
+});
+
+$(".shapebtn").click(function(){
+	$("#shape").show();	
+});
+
+$(".fixbottom .libox").click(function(){
+	var index=$(this).index();
+	$(this).addClass("active").siblings().removeClass("active");
+	$("section").eq(index).show().siblings("section").hide();	
+});
+</script>
+</body>
+</html>
